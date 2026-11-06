@@ -1,7 +1,23 @@
+# Dependencies
 node_modules/
-dist/
+
+# Environment files
 .env
 .env.*
 !.env.example
-.DS_Store
+
+# Build outputs
+dist/
+build/
+
+# Artifacts
+artifacts/*
+!artifacts/.gitkeep
+
+# Logs
+logs/
 *.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,102 @@
+.sentinel-app {
+  min-height: 100vh;
+  background: #05060a;
+  color: #e9eaf4;
+}
+
+.sentinel-app ::selection {
+  background: #00f0ff;
+  color: #030409;
+}
+
+.sentinel-app .btn-sentinel-primary {
+  border-radius: 999px;
+  background: linear-gradient(110deg, #9af9ff 0%, #00f0ff 32%, #7b5cff 68%, #ff2bd6 100%);
+  color: #04060b !important;
+  box-shadow: 0 0 34px -12px rgba(0, 240, 255, 0.75);
+  transition:
+    filter 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.sentinel-app .btn-sentinel-primary:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 0 46px -10px rgba(139, 92, 246, 0.75);
+}
+
+.sentinel-app .btn-sentinel-primary:active {
+  transform: scale(0.985);
+}
+
+.sentinel-app .sentinel-panel {
+  background:
+    radial-gradient(120% 120% at 0% 0%, rgba(0, 240, 255, 0.055) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.012) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.sentinel-app .sentinel-logo-mark {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%),
+    #080a12;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 28px -12px rgba(0, 240, 255, 0.8);
+}
+
+.sentinel-app .sentinel-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 0%, transparent 78%);
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 0%, transparent 78%);
+}
+
+.sentinel-app .sentinel-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.sentinel-app .sentinel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sentinel-app .sentinel-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+
+.sentinel-app .sentinel-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.35);
+}
+
+.sentinel-app .animate-fade-in {
+  animation: sentinel-fade-in 0.2s ease-out both;
+}
+
+.sentinel-app .sentinel-rise {
+  animation: sentinel-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes sentinel-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sentinel-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
