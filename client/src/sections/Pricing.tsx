@@ -135,7 +135,7 @@ export function Pricing() {
                 )}
               >
                 {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 z-10 -translate-x-1/2 rounded-full border border-white/20 bg-gradient-to-r from-neon-cyan via-neon-violet to-neon-magenta px-3 py-1 font-mono text-[8px] uppercase tracking-[0.2em] text-ink">
+                  <div className="absolute -top-3 left-1/2 z-10 -translate-x-1/2 rounded-full border border-neon-cyan/40 bg-neon-cyan px-3 py-1 font-mono text-[8px] uppercase tracking-[0.2em] text-ink">
                     Most popular
                   </div>
                 )}

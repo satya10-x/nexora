@@ -26,7 +26,7 @@ type MagneticButtonProps = {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    'text-[#04060b] bg-[linear-gradient(110deg,#9af9ff_0%,#00f0ff_32%,#7b5cff_68%,#ff2bd6_100%)] shadow-[0_0_38px_-10px_rgba(0,240,255,0.75)] hover:shadow-[0_0_52px_-8px_rgba(139,92,246,0.8)]',
+    'text-[#04060b] bg-[linear-gradient(180deg,#7df9ff_0%,#00e2f2_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.45),0_0_30px_-12px_rgba(0,240,255,0.65)] hover:bg-[linear-gradient(180deg,#8ffbff_0%,#00eefc_100%)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_0_40px_-10px_rgba(0,240,255,0.75)]',
   ghost:
     'text-white glass hover:border-neon-cyan/40 hover:bg-white/[0.07] hover:shadow-[0_0_34px_-14px_rgba(0,240,255,0.7)]',
   outline:
